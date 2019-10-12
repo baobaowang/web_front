@@ -76,10 +76,10 @@ div p{
 1. 伪类选择器
 ```css
         一般用于连接,别的标签也可以使用
-            a:link{   未访问
+            a:link{   未访问时
                 color:cyan
             }
-            a:hover{ 悬浮
+            a:hover{ 悬浮时
                 color: cornflowerblue;
             }
             a:active{ 点击中
@@ -124,3 +124,95 @@ div p{
 5.  font:  简写样式  
         顺序:样式-->粗细-->大小-->设置字体
         font:normal bold 20px 华为楷体,楷体,arial 
+
+### 文本属性  
+1. color:文本颜色;  
+    取值: 四种.  
+    1. 颜色名;  
+    2. #FFFFFF;16进制RGB,可缩写为3位,不区分大小写.    
+    3. rgb(255,255,255);RGB函数.  
+    4. rgba(255,255,255,alpha);alpha设置透明度,  
+                    取值0(完全透明)到1(完全不透明)之间,可设置小数.  
+2. line-height:50px;   
+    设置行高,行与行之间的距离,单位px;  
+3. text-align:center;  
+    设置水平对齐方式,取值left,center,right(左中右).  
+4. vertical-align:top;  
+    设置图片和文字的垂直对齐方式.  
+    取值:top,middle,bottom(上中下).  
+5. text-indent:30px;  
+    首行缩进  
+6. text-decoration:overline;  
+    文本缩进.  
+    取值:underline,overline,line-through(下划线,上划线,删除线).   
+7. text-transform:lowercase;  
+    设置英文文本大小写.  
+    取值:lowercase,uppercase,capitalize(全部小写,全部大写,全部单词的首字母大写).  
+8. word-spacing: 0px;  
+    单词间距
+9. letter-spacing: 0px;  
+    字符间距.  
+10. white-space:nowrap;  
+    文本超出后是否换行.  
+    取值:wrap,nowrap(换行,不换行).  
+
+### 背景属性
+1. background-color:#ffffff;    
+    背景颜色.取值rgb或者transparent(透明的,会显出下层颜色)
+2. background-image:url(image/image.png)  
+    背景图片(需要用url指定路径)  
+    注意:外部引用background-image:url(../image/image.png)  
+3. background-repeat: 
+    背景图片重复方式.  
+    取值:repeat(默认,x和y都重复),  
+    repeat-x(水平重复),repeat-y(垂直重复),  
+    no-repeat(不重复).  
+4. background-position:10px 10px;  
+    两种取值方式:  
+    1. 关键字:top,bottom,left,right,center.    
+            background-position:top center;
+    2. 坐标:浏览器左上角为0.0 ,向右为x正方向,向左为y正方向.  
+        background-position:10px 10px;  
+    3. css雪碧图(css精灵)  
+        ```css
+        在一张集合了小图标的图片里显示图标,
+        先指定显示的大小,再用背景定位.
+                width:10px;
+                height: 10px;
+                background-position: 15px 25px;
+        ```
+5. background-attachment: scroll;  
+    图片是否跟随滚动条滚动.  
+    取值:scroll(默认,滚动),fixed(固定).  
+6. background:      
+    简写,没有顺序要求.
+
+### 列表属性
+1. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
